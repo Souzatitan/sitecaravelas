@@ -7,7 +7,7 @@
 body {
     width: 100vm;
     position: relative;
-    background-color: burlywood;
+    background-image: url(../image/bg.webp);
 }
 
 header {
@@ -92,6 +92,8 @@ ul a:hover {
     align-items: center;
     margin: auto;
     flex-direction: column;
+    background: linear-gradient(90deg, #f5e4d0, #e6ccb5, #d6b99a
+);
     margin-top: 150px;
     box-shadow: 4px 4px 8px rgba(139,69,19,0.5);
     border-radius: 7px;
@@ -122,7 +124,7 @@ ul a:hover {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: bisque;
+    
     box-shadow: 0 -10px 15px rgba(0, 0, 0, 0.2); /* Sombra entre as sections */
     
 }
@@ -132,7 +134,7 @@ ul a:hover {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: rgb(156, 130, 97);
+  
     box-shadow: 0 -10px 15px rgba(0, 0, 0, 0.2); /* Sombra entre as sections */
     
 }
@@ -143,7 +145,7 @@ ul a:hover {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: rgb(59, 101, 114);
+    
     box-shadow: 0 -10px 15px rgba(0, 0, 0, 0.2); /* Sombra entre as sections */
     
 }
@@ -153,7 +155,7 @@ ul a:hover {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: rgb(197, 196, 255);
+    
     box-shadow: 0 -10px 15px rgba(0, 0, 0, 0.2); /* Sombra entre as sections */
     
 }
@@ -161,6 +163,15 @@ ul a:hover {
 
 
 .sobre {
+    width: 50%;
+}
+.contato {
+    width: 50%;
+}
+.servicos {
+    width: 50%;
+}
+.relato {
     width: 50%;
 }
 
@@ -215,6 +226,20 @@ span {
   .textarea {
     animation: fadeIn 1.5s ease-in-out; /* Nome, duração, e timing function */
   }
-  .furadeira {
-    animation: fadeIn 1.5s ease-in-out; /* Nome, duração, e timing function */
+
+
+  @keyframes slideIn {
+    0% {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
   }
+  
+  .furadeira {
+    animation: slideIn 1s ease-out;
+  }
+  
