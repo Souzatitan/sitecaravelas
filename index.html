@@ -13,6 +13,7 @@
         <div class="logo">CaravelasMoveis</div>
         <nav class="navbar">
             <ul>
+                <li><a href="#home">Home</a></li>
                 <li><a href="#about">Sobre</a></li>
                 <li><a href="#contact">Contato</a></li>
                 <li><a href="#services">Serviços </a></li>
@@ -20,7 +21,7 @@
             </ul>
         </nav>
     </header>
-    <section class="container">
+    <section class="container" id="home">
         <img src="./assets/image/8CgJMROPQZafrFtihCuVJg-removebg-preview.png" alt="" class="furadeira">
         <div class="textarea">
             <h1>Montador de Móveis</h1>
@@ -30,23 +31,50 @@
     </section>
     <section class="about" id="about">
         <div class="sobre">
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse totam placeat nostrum architecto quam quod accusamus vero commodi omnis exercitationem distinctio ipsum eos deleniti dicta sunt, animi error expedita aut.</p>
+            <h2>Sobre min</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse totam placeat nostrum architecto quam quod accusamus vero commodi omnis exercitationem distinctio ipsum eos deleniti dicta sunt, animi error expedita aut.
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse totam placeat nostrum architecto quam quod accusamus vero commodi omnis exercitationem distinctio ipsum eos deleniti dicta sunt, animi error expedita aut.
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse totam placeat nostrum architecto quam quod accusamus vero commodi omnis exercitationem distinctio ipsum eos deleniti dicta sunt, animi error expedita aut.
+            </p>
         </div>
     </section>
     <section class="contact" id="contact">
-        <div class="contato">
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse totam placeat nostrum architecto quam quod accusamus vero commodi omnis exercitationem distinctio ipsum eos deleniti dicta sunt, animi error expedita aut.</p>
-        </div>
+        <form id="formulario" action="contato.html" method="post">
+ 
+            <label for="nome">Seu nome</label>
+            <input type="text" name="nome" id="nome" placeholder="Nome" /><br />
+            <label for="email">Seu e-mail</label>
+            <input type="email" name="email" id="email" placeholder="digite seu email" /><br />
+            <label for="telefone">Telefone</label>
+            <input type="tel" name="telefone" id="telefone" placeholder="digite seu telefone" /><br />
+            <label>Deixe sua mensagem</label>
+            <textarea id="texto" name="texto"  rows="15">
+              ...
+            </textarea><br />
+            <button>Enviar</button>
+           
+          </form>
     </section>
     <section class="services" id="services">
-        <div class="servicos">
+        <div class="montage">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse totam placeat nostrum architecto quam quod accusamus vero commodi omnis exercitationem distinctio ipsum eos deleniti dicta sunt, animi error expedita aut.</p>
+        </div>
+        <div class="repair">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse totam placeat nostrum architecto quam quod accusamus vero commodi omnis exercitationem distinctio ipsum eos deleniti dicta sunt, animi error expedita aut.</p>
+        </div>
+        <div class="dismont">
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse totam placeat nostrum architecto quam quod accusamus vero commodi omnis exercitationem distinctio ipsum eos deleniti dicta sunt, animi error expedita aut.</p>
         </div>
     </section>
     <section class="report" id="report">
         <div class="relato">
+            <h3>Deixe um relato</h3><br>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse totam placeat nostrum architecto quam quod accusamus vero commodi omnis exercitationem distinctio ipsum eos deleniti dicta sunt, animi error expedita aut.</p>
         </div>
+        <textarea id="texto" name="texto"  rows="15">
+            ...
+          </textarea><br />
+          <button>Enviar</button>
     </section>
 
     <footer>
