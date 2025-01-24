@@ -22,12 +22,16 @@
         </nav>
     </header>
     <section class="container" id="home">
-        <img src="./assets/image/8CgJMROPQZafrFtihCuVJg-removebg-preview.png" alt="" class="furadeira">
+        <div class="fura">
+        <img src="./assets/image/8CgJMROPQZafrFtihCuVJg-removebg-preview.png" alt="" >
+        </div>
         <div class="textarea">
             <h1>Montador de Móveis</h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At consequuntur et, quisquam voluptates fugit minus cum libero accusantium. Ducimus perferendis placeat ut accusantium quis cumque cum, obcaecati iste praesentium consequuntur, architecto eos? Aut eum itaque nemo incidunt illum, minima minus! Iure laboriosam vel dolore deserunt reiciendis porro quis dolor distinctio.</p>
         </div>
-        <img src="./assets/image/8CgJMROPQZafrFtihCuVJg-removebg-preview.png" alt="" class="furadeira">
+        <div class="furadeira">
+        <img src="./assets/image/8CgJMROPQZafrFtihCuVJg-removebg-preview.png" alt="" >
+        </div>
     </section>
     <section class="about" id="about">
         <div class="sobre">
@@ -39,7 +43,7 @@
         </div>
     </section>
     <section class="contact" id="contact">
-        <form id="formulario" action="contato.html" method="post">
+        <form class="contato" id="formulario" action="contato.html" method="post">
  
             <label for="nome">Seu nome</label>
             <input type="text" name="nome" id="nome" placeholder="Nome" /><br />
@@ -68,13 +72,24 @@
     </section>
     <section class="report" id="report">
         <div class="relato">
-            <h3>Deixe um relato</h3><br>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse totam placeat nostrum architecto quam quod accusamus vero commodi omnis exercitationem distinctio ipsum eos deleniti dicta sunt, animi error expedita aut.</p>
+           
+            
+            <form id="commentForm">
+                <h3>Satisfeito ? Deixe um breve relato !</h3><br>
+                <label for="name">Nome:</label>
+                <input type="text" id="name" name="name" required placeholder="Deixe seu nome" maxlength="20">
+                <small id="mensagem-erro" style="color: red; display: none;">Apenas letras e espaços são permitidos.</small>
+                <br>
+                <label for="comment">Comentário:</label>
+                <textarea id="comment" name="comment" required  maxlength="50" placeholder="Máximo de 50 caracteres"></textarea>
+                <br>
+                <button type="submit">Enviar</button>
+            </form>
+            <div class="comentar">
+            <h2>Últimos Comentários</h2>
+            <div id="commentsContainer"></div>
+            </div>
         </div>
-        <textarea id="texto" name="texto"  rows="15">
-            ...
-          </textarea><br />
-          <button>Enviar</button>
     </section>
 
     <footer>
@@ -83,5 +98,7 @@
         <i class="fa-brands fa-facebook"></i>
         <i class="fa-brands fa-whatsapp"></i>
     </footer>
+
+    <script src="./assets/js/script.js"></script>
 </body>
 </html>
