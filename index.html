@@ -22,27 +22,41 @@
         </nav>
     </header>
     <section class="container" id="home">
-        <div class="fura">
-        <img src="./assets/image/8CgJMROPQZafrFtihCuVJg-removebg-preview.png" alt="" >
-        </div>
-        <div class="textarea">
-            <h1>Montador de Móveis</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At consequuntur et, quisquam voluptates fugit minus cum libero accusantium. Ducimus perferendis placeat ut accusantium quis cumque cum, obcaecati iste praesentium consequuntur, architecto eos? Aut eum itaque nemo incidunt illum, minima minus! Iure laboriosam vel dolore deserunt reiciendis porro quis dolor distinctio.</p>
-        </div>
-        <div class="furadeira">
-        <img src="./assets/image/8CgJMROPQZafrFtihCuVJg-removebg-preview.png" alt="" >
-        </div>
+        <div class="home">
+            
+            <div class="img1">
+                <img src="./assets/image/desk.png" alt="" >
+            </div>
+            <div class="textarea">
+                <h1>Sejam Bem Vindos</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At consequuntur et, quisquam voluptates fugit minus cum libero accusantium. Ducimus perferendis placeat ut accusantium quis cumque cum, obcaecati iste praesentium consequuntur, architecto eos? Aut eum itaque nemo incidunt illum, minima minus! Iure laboriosam vel dolore deserunt reiciendis porro quis dolor distinctio.</p>
+            </div>
+            <div class="right">
+                <div class="img2">
+                    <img src="./assets/image/construtor.png" alt="" >
+                </div>
+                <div class="img3">
+                    <img src="./assets/image/furadeira.png" alt="" >
+                </div>
+            </div>
+            
+        </div>    
     </section>
     <section class="about" id="about">
         <div class="sobre">
+            
             <h2>Sobre min</h2>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse totam placeat nostrum architecto quam quod accusamus vero commodi omnis exercitationem distinctio ipsum eos deleniti dicta sunt, animi error expedita aut.
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse totam placeat nostrum architecto quam quod accusamus vero commodi omnis exercitationem distinctio ipsum eos deleniti dicta sunt, animi error expedita aut.
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse totam placeat nostrum architecto quam quod accusamus vero commodi omnis exercitationem distinctio ipsum eos deleniti dicta sunt, animi error expedita aut.
             </p>
+            
         </div>
     </section>
     <section class="contact" id="contact">
+        <br>
+        <h2>Entre em contato </h2>
+        <div class="ecc">
         <form class="contato" id="formulario" action="contato.html" method="post">
  
             <label for="nome">Seu nome</label>
@@ -58,36 +72,44 @@
             <button>Enviar</button>
            
           </form>
+        </div>  
     </section>
     <section class="services" id="services">
         <div class="montage">
+            <h3>Montagem</h3><br>
+            <img src="./assets/image/desk.png" alt=""><br>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse totam placeat nostrum architecto quam quod accusamus vero commodi omnis exercitationem distinctio ipsum eos deleniti dicta sunt, animi error expedita aut.</p>
         </div>
         <div class="repair">
+            <h3>Pequenos reparos</h3><br>
+            <img src="./assets/image/desk.png" alt=""><br>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse totam placeat nostrum architecto quam quod accusamus vero commodi omnis exercitationem distinctio ipsum eos deleniti dicta sunt, animi error expedita aut.</p>
         </div>
         <div class="dismont">
+            <h3>Desmontagem</h3><br>
+            <img src="./assets/image/desk.png" alt=""><br>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse totam placeat nostrum architecto quam quod accusamus vero commodi omnis exercitationem distinctio ipsum eos deleniti dicta sunt, animi error expedita aut.</p>
         </div>
     </section>
     <section class="report" id="report">
         <div class="relato">
-           
-            
-            <form id="commentForm">
-                <h3>Satisfeito ? Deixe um breve relato !</h3><br>
-                <label for="name">Nome:</label>
-                <input type="text" id="name" name="name" required placeholder="Deixe seu nome" maxlength="20">
-                <small id="mensagem-erro" style="color: red; display: none;">Apenas letras e espaços são permitidos.</small>
-                <br>
-                <label for="comment">Comentário:</label>
-                <textarea id="comment" name="comment" required  maxlength="50" placeholder="Máximo de 50 caracteres"></textarea>
-                <br>
-                <button type="submit">Enviar</button>
-            </form>
+            <h3>Satisfeito ? Deixe um breve relato !</h3><br>
+           <div class="coment">
+                <form id="commentForm">
+                    
+                    <label for="name">Nome:</label>
+                    <input type="text" id="name" name="name" required placeholder="Deixe seu nome" maxlength="20">
+                    <small id="mensagem-erro" style="color: red; display: none;">Apenas letras e espaços são permitidos.</small>
+                    <br>
+                    <label for="comment">Comentário:</label>
+                    <textarea id="comment" name="comment" required  maxlength="50" placeholder="Máximo de 50 caracteres"></textarea>
+                    <br>
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>    
             <div class="comentar">
-            <h2>Últimos Comentários</h2>
-            <div id="commentsContainer"></div>
+                <h2>Últimos Comentários</h2>
+                    <div id="commentsContainer"></div>
             </div>
         </div>
     </section>

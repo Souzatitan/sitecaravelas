@@ -15,13 +15,17 @@ header {
     width: 100%;
     height:70px ;
     position:fixed;
-    
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 5px 10px;
     z-index: 1000;
+    color: #333;
 
+    background: rgba(255, 255, 255, 0.2); /* Cor de fundo com opacidade */
+    backdrop-filter: blur(10px); /* Aplica o blur */
+    -webkit-backdrop-filter: blur(10px); /* Suporte para navegadores baseados em WebKit */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Adiciona uma leve sombra */
 }
 
 .logo {
@@ -59,7 +63,7 @@ ul li {
 
 ul a {
     text-decoration: none;
-    color: azure;
+    color: #333;
     font-size: 18px;
     font-weight: 600;
     
@@ -78,23 +82,62 @@ ul a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100vw;
     height: 100vh;
-    margin: auto;
     box-shadow: 0 -10px 15px rgba(0, 0, 0, 0.2); /* Sombra entre as sections */
-    transition: ease;
-    
+    transition: ease;  
 }
 
+.home {
+    width: 80%;
+    height: 70%;
+    margin: auto;
+    display: flex;
+    overflow: hidden;
+    gap: 15px;
+}
+
+img {
+    width: 80%;
+    border-radius: 50px;
+}
+.img1 {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 150px;
+}
+.right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+}
+.img2 {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+}
+
+.img3 {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .textarea {
-    width: 100%;
-    height: 50%;
+    flex: 2;
     position: relative;
     display: flex;
     align-items: center;
     margin: auto;
-    flex-direction: column;
+    justify-content: center;
     background: linear-gradient(90deg, #f5e4d0, #e6ccb5, #d6b99a);
-    margin-top: 150px;
+    flex-direction: column;
     box-shadow: 4px 4px 8px rgba(139,69,19,0.5);
     border-radius: 7px;
     padding: 15px;
@@ -123,54 +166,26 @@ ul a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100vw;
     height: 100vh;
-    
     box-shadow: 0 -10px 15px rgba(0, 0, 0, 0.2); /* Sombra entre as sections */
+    transition: ease; 
     
 }
-.contact {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-  
-    box-shadow: 0 -10px 15px rgba(0, 0, 0, 0.2); /* Sombra entre as sections */
-    
-}
-
-.services {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    
-    box-shadow: 0 -10px 15px rgba(0, 0, 0, 0.2); /* Sombra entre as sections */
-    
-}
-.report {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: auto ;
-    box-shadow: 0 -10px 15px rgba(0, 0, 0, 0.2); /* Sombra entre as sections */
-    
-}
-
-
 
 .sobre {
     width: 40%;
+    height: 70%;
     display: flex;
-    position: relative;
-    align-items: flex-start;
-    margin-right: 700px;
-    
+    overflow: hidden;
+    justify-content: flex-end;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 600px;
+    margin-bottom: 150px;
 
 }
+
 .sobre h2 {
     padding: 20px;
     font-size: 32px;
@@ -184,77 +199,82 @@ ul a:hover {
     flex-wrap: nowrap;
     text-align: justify;
 }
-.contato {
-    width: 50%;
+
+.contact {
+    position: relative;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    box-shadow: 0 -10px 15px rgba(0, 0, 0, 0.2); /* Sombra entre as sections */
+    transition: ease; 
+    
+    
 }
+
+.ecc {
+    display: flex;
+    position: relative;
+    margin: auto;
+    font-size: 21px;
+    font-weight: 500;
+}
+
+.contato {
+    display: flex;
+    flex-direction: column;
+    transform: scale(0.8);
+}
+
+.services {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    box-shadow: 0 -10px 15px rgba(0, 0, 0, 0.2); /* Sombra entre as sections */
+    transition: ease; 
+    
+}
+
 .repair {
     width: 30%;
     padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .montage {
     width: 30%;
     padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .dismont {
     width: 30%;
     padding: 10px;
-}
-
-
-.furadeira {
-   
-    border-radius: 25px;
-    
-    margin-top: 300px;
-    z-index: 1;
-}
-
-.furadeira img {
-    width: 300px;
-}
-
-.fura {
-    
-    border-radius: 25px;
-    margin: 10px;
-    margin-top: 300px;
-    z-index: 1;
-}
-
-.fura img {
-    width: 300px;
-}
-
-.contato {
     display: flex;
-    position: relative;
+    flex-direction: column;
     align-items: center;
-    flex-direction: column;
-    width: 50%;
-    height: 70%;
-    text-align: center;
-    margin: auto;
-    font-size: 21px;
-    font-weight: 500;
-    padding: 20px;
-    gap: 0;
 }
 
-.txtco {
-    display: flex;
+.report {
     position: relative;
-    align-items:flex-start;
-    flex-direction: column;
-    width: 50%;
-    height: 70%;
-    text-align: center;
-    margin-right: 400px;
-    font-size: 21px;
-    font-weight: 500;
-    padding: 20px;
-    gap: 0;
-    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    box-shadow: 0 -10px 15px rgba(0, 0, 0, 0.2); /* Sombra entre as sections */
+    transition: ease; 
+    
 }
+
+
 
 
 
@@ -275,23 +295,18 @@ textarea{
 .relato {
     display: flex; 
     justify-content: center;
-    align-items: flex-start; 
+    align-items: center;
     text-align: center;
     position: relative;
     gap: 40px;
+    text-align: center;
   }
   
-  form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    flex: 1; 
-    
-   
-  }
+ 
 
-  .comentar {
+  .coment {
     display: flex;
+    text-align: center;
     flex-direction: column;
     flex: 1; 
     width: 700px;
@@ -352,7 +367,6 @@ footer {
     width: 100%;
     height:70px ;
     position:fixed;
-    
     display: flex;
     align-items: center;
     justify-content: center;
@@ -360,19 +374,23 @@ footer {
     padding: 5px 10px;
     z-index: 1000;
     bottom: 0;
+    background: rgba(255, 255, 255, 0.3); /* Cor de fundo com opacidade */
+    backdrop-filter: blur(10px); /* Aplica o blur */
+    -webkit-backdrop-filter: blur(10px); /* Suporte para navegadores baseados em WebKit */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Adiciona uma leve sombra */
     
 
 }
 
 .fa-brands {
-    color: aliceblue;
+    color: rgb(35, 35, 219);
     font-size: 32px;
     padding: 20px;
 }
 
 span {
     
-    color: azure;
+    color: rgb(35, 35, 219);
     font-size: 18px;
     font-weight: 600;
     
