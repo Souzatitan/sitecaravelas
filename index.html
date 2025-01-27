@@ -92,27 +92,49 @@
         </div>
     </section>
     <section class="report" id="report">
+        <h3>Satisfeito? Deixe um breve relato!</h3>
+        <br>
         <div class="relato">
-            <h3>Satisfeito ? Deixe um breve relato !</h3><br>
-           <div class="coment">
-                <form id="commentForm">
-                    
-                    <label for="name">Nome:</label>
-                    <input type="text" id="name" name="name" required placeholder="Deixe seu nome" maxlength="20">
-                    <small id="mensagem-erro" style="color: red; display: none;">Apenas letras e espaços são permitidos.</small>
-                    <br>
-                    <label for="comment">Comentário:</label>
-                    <textarea id="comment" name="comment" required  maxlength="50" placeholder="Máximo de 50 caracteres"></textarea>
-                    <br>
-                    <button type="submit">Enviar</button>
-                </form>
-            </div>    
-            <div class="comentar">
-                <h2>Últimos Comentários</h2>
-                    <div id="commentsContainer"></div>
-            </div>
+          <!-- Formulário de Comentário -->
+          <form id="commentForm">
+            <label for="name">Nome:</label>
+            <input 
+              type="text" 
+              id="name" 
+              name="name" 
+              required 
+              placeholder="Deixe seu nome" 
+              maxlength="20"
+            />
+            <small 
+              id="mensagem-erro" 
+              style="color: red; display: none;"
+            >
+              Apenas letras e espaços são permitidos.
+            </small>
+            <br>
+      
+            <label for="comment">Comentário:</label>
+            <textarea 
+              id="comment" 
+              name="comment" 
+              required 
+              maxlength="50" 
+              placeholder="Máximo de 50 caracteres"
+            ></textarea>
+            <br>
+      
+            <button type="submit">Enviar</button>
+          </form>
+      
+          <!-- Seção de Comentários -->
+          <div class="comentar">
+            <h2>Últimos Comentários</h2>
+            <div id="commentsContainer"></div>
+          </div>
         </div>
-    </section>
+      </section>
+      
 
     <footer>
         <span>@todos direitos reservado</span>
