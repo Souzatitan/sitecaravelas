@@ -241,21 +241,21 @@ img {
 }
 
 .repair {
-    width: 30%;
+    width: 25%;
     padding: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 .montage {
-    width: 30%;
+    width: 25%;
     padding: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 .dismont {
-    width: 30%;
+    width: 25%;
     padding: 10px;
     display: flex;
     flex-direction: column;
