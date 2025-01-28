@@ -13,7 +13,7 @@ body {
 
 header {
     width: 100%;
-    height:70px ;
+    height:40px ;
     position:fixed;
     display: flex;
     align-items: center;
@@ -172,18 +172,32 @@ img {
     transition: ease; 
     
 }
-
 .sobre {
-    width: 40%;
-    height: 70%;
+
     display: flex;
     overflow: hidden;
+   
+    align-items: center;
+   ;
+}
+
+.aboutme{
+    width: 40%;
+    display: flex;
     justify-content: flex-end;
     flex-direction: column;
     align-items: center;
-    margin-right: 600px;
-    margin-bottom: 150px;
+    margin-left: 25px;
+}
 
+.migrate {
+    display: flex;
+    flex: 1;
+    width: 300px;
+    z-index: 2;
+    align-items: center;
+    justify-content: center;
+    
 }
 
 .sobre h2 {
@@ -215,17 +229,25 @@ img {
 }
 
 .ecc {
+
     display: flex;
     position: relative;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 50%;
     margin: auto;
     font-size: 21px;
     font-weight: 500;
+    flex-direction: column;
 }
 
 .contato {
+    position: relative;
     display: flex;
     flex-direction: column;
-    transform: scale(0.8);
+    align-items: center;
+    
 }
 
 .services {
@@ -316,7 +338,7 @@ input {
 
 textarea{
     width: 420px ;
-    height: 200PX;
+    height: 100PX;
     border-radius: 12px;
     padding: 5px 15px;
 }
@@ -360,11 +382,11 @@ textarea{
     margin-top: 20px;
     padding: 12px;
     width: 400px;
-    max-height: 300px; /* Define altura máxima para rolagem */
+    max-height: 350px; /* Define altura máxima para rolagem */
     overflow-y: auto;
-    background: transparent;
     padding: 10px;
     border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   }
   
   .comment {
@@ -402,7 +424,7 @@ button:hover {
 }
 footer {
     width: 100%;
-    height:70px ;
+    height:40px ;
     position:fixed;
     display: flex;
     align-items: center;
