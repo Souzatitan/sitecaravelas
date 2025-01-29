@@ -7,6 +7,7 @@
 
 body {
     width: 100vmax;
+    height: 100vh;
     position: relative;
     background-image: url(../image/bg.webp);
 }
@@ -58,6 +59,7 @@ ul {
 
 ul li {
     margin-left: 20px;
+    margin-bottom: 15px;
     
 }
 
@@ -68,7 +70,7 @@ ul a {
     font-weight: 600;
     
     border-radius: 10px;
-    padding: 10px;
+    padding: 5px;
 }
 
 ul a:hover {
@@ -100,13 +102,16 @@ ul a:hover {
 img {
     width: 80%;
     border-radius: 50px;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
-.img1 {
+.left {
     flex: 1;
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 150px;
+
 }
 .right {
     flex: 1;
@@ -115,22 +120,25 @@ img {
     justify-content: space-between;
     gap: 20px;
 }
-.img2 {
+.top {
     flex: 1;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 20px;
+   
 }
 
-.img3 {
+.button {
     flex: 1;
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
-.textarea {
+.center {
     flex: 2;
+    height: 40vh;
     position: relative;
     display: flex;
     align-items: center;
@@ -142,9 +150,10 @@ img {
     border-radius: 7px;
     padding: 15px;
     transition: 0.2s ease;
+    
 }
 
-.textarea:hover {
+.center:hover {
     transform: scale(1.1);
 }
 
@@ -152,7 +161,7 @@ img {
     color: black;
     font-weight: bold;
     font-size: 32px;
-    margin-bottom: 50px;
+    
     
 }
 
@@ -251,37 +260,19 @@ img {
 }
 
 .services {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100vw;
-    height: 100vh;
-    box-shadow: 0 -10px 15px rgba(0, 0, 0, 0.2); /* Sombra entre as sections */
-    transition: ease; 
-    
+  display: flex; /* Ativa o Flexbox */
+  justify-content: space-around; /* Distribui espaço entre os elementos */
+  align-items: flex-start; /* Alinha os itens no topo */
+  align-items: center;
+  gap: 20px; /* Espaçamento entre os itens */
+  flex-wrap: wrap; /* Permite quebra para responsividade */
+  width: 100vw;
+  height: 100vh;
 }
 
-.repair {
-    width: 25%;
-    padding: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.montage {
-    width: 25%;
-    padding: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.dismont {
-    width: 25%;
-    padding: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.services div {
+  width: 30%; /* Define largura proporcional */
+  text-align: center;
 }
 
 section.report {
@@ -486,12 +477,118 @@ span {
   }
   
   @media screen and (max-width: 768px) {
+   
     body {
-        width: 100%;
+      width: 50%;
     }
     .navbar {
         display: none;
     }
+
+    .section .container {
+      display: flex;
+      position: relative;
+      margin: auto;
+      
+    } 
+    .section .about {
+      flex-direction: column; /* No Flexbox */
+      display: block; /* No Grid */
+    } 
+
+    
+    .services {
+      flex-direction: column; /* No Flexbox */
+      display: block; /* No Grid */
+      
+     
+      
+  }
+
+  .services div {
+      width: 60%; /* Cada item ocupa toda a largura */
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      margin: auto;
+  }
+
+    section.report{
+      margin-top: 0;
+      display: flex;
+      position: relative;
+      margin: auto;
+      flex-direction: column;
+    }
+
+    section .contact {
+      display: flex;
+      position: relative;
+      margin: auto;
+      flex-direction: column;
+    }
+    .home {
+      display: block;
+      position: relative;
+      flex-direction: column;
+      margin: auto;
+      display: flex;
+      overflow: hidden;
+      gap: 10px;
+    }
+
+    img {
+      display: flex;
+      width: 20%;
+      border-radius: 50px;
+      margin: 0;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    .right {
+      margin-top: 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .top {
+      padding: 10px auto;
+      flex: 1;
+    }
+    .center {
+      display: flex;
+      width: 50%;
+    }
+
+    .left {
+      margin-top: 0;
+      padding: 0;
+    }
+
+
+
+    .relato, .sobre {
+      display: block;
+    }
+    .montage {
+      width: 50%;
+      flex: 1;
+      
+    }
+
+    .repair {
+      width: 50%;
+      
+    }
+    
+    .dismont {
+      width: 50%;
+      
+    }
+    
+    
+
     
     
 
