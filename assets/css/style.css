@@ -481,7 +481,7 @@ span {
     }
   }
   
-  .furadeira {
+  .img1, .img2, .img3 , .migrate {
     animation: slideIn 1s ease-out;
   }
   
@@ -492,28 +492,7 @@ span {
     .navbar {
         display: none;
     }
-    .textarea  {
-        
-        padding: 0;
-        margin: auto;
-        
-    }
-    .furadeira {
-        display:flex;
-        position: relative;
-        width: 20%;
-        
-        
-    }
-    .fura {
-        display: flex;
-        position: relative;
-        width: 10%;
-        
-    }
-    img {
-        width: 10px;
-    }
+    
     
 
   }
